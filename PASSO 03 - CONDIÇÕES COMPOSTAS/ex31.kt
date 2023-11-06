@@ -42,7 +42,7 @@ fun main(){
             suaJogada = suaJogada.lowercase()
             while ((suaJogada != "pedra") || (suaJogada != "papel") || (suaJogada != "tesoura")){
                 println("-----------------------")
-                println("ops, você deve ter escrito errado, porfavor escreva sua jogada!! (Pedra-Papel-Tesoura)")
+                println("ops, você deve ter escrito errado, por favor escreva sua jogada!! (Pedra-Papel-Tesoura)")
                 print("Qual vai ser sua jogada: ")
                 suaJogada = readln()
                 suaJogada = suaJogada.lowercase()
@@ -80,22 +80,22 @@ fun main(){
             }
 
             if (maquinaJogada == suaJogada) {
-                println("você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
+                println("Você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
                 println("----- IMPATE -----")
             } else if (suaJogada == "pedra" && maquinaJogada == "tesoura") {
-                println("você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
+                println("Você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
                 println("----- VOCÊ GANHOU -----")
                 pontosEu++
             } else if (suaJogada == "papel" && maquinaJogada == "pedra") {
-                println("você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
+                println("Você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
                 println("----- VOCÊ GANHOU -----")
                 pontosEu++
             } else if (suaJogada == "tisoura" && maquinaJogada == "pedra") {
-                println("você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
+                println("Você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
                 println("----- VOCÊ GANHOU -----")
                 pontosEu++
             } else {
-                println("você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
+                println("Você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
                 println("----- VOCÊ PERDEU -----")
                 pontosMaquina++
             }

@@ -49,6 +49,13 @@ fun main(){
                 suaJogada = suaJogada.lowercase()
             }
              */
+            while ((suaJogada != "pedra") && (suaJogada != "papel") && (suaJogada != "tesoura")) {
+                println("-----------------------")
+                println("Ops, você deve ter escrito errado, por favor escreva sua jogada!! (Pedra-Papel-Tesoura)")
+                print("Qual vai ser sua jogada: ")
+                suaJogada = readln()
+                suaJogada = suaJogada.lowercase()
+            }
 
             val delayMillis = 1000 // Define a quantidade de milissegundos de pausa entre os números
             for (i in 1..4) {

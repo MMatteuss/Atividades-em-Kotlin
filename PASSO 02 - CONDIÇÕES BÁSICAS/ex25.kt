@@ -7,11 +7,11 @@ retas. Matematicamente, para três segmentos formarem um triângulo, o comprimen
 de cada lado deve ser menor que a soma dos outros dois
  */
 fun main(){
-    print("a")
+    print("Digite um valor para o ponto A: ")
     val a : Int = readln().toInt()
-    print("b")
+    print("Digite um valor para o ponto B: ")
     val b : Int = readln().toInt()
-    print("c")
+    print("Digite um valor para o ponto C: ")
     val c : Int = readln().toInt()
 
     if ((a< b+c) && (b< a+b) && (c< a+b)){

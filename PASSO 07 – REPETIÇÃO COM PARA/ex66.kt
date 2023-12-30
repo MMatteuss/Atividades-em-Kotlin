@@ -38,10 +38,6 @@ fun main(){
             mulheres++
             pessoMulher = peso
         }
-
-        if (i == 8){
-            println("fim")
-        }
         println(" ")
     }
     println("Foram cadastradas $mulheres mulheres")

@@ -1,15 +1,11 @@
-package `PASSO 07 – REPETIÇÃO COM PARA`
-//Escreva um programa que leia um número qualquer e mostre a tabuada desse
-//número, usando a estrutura “para”.
-//Ex: Digite um valor: 5
-//5 x 1 = 5
-//5 x 2 = 10
-//5 x 3 = 15 ...
-fun main(){
-    print("Digite um número para ver a tabuada: ")
-    val numeroDigitado: Int = readln().toInt()
-    for (i in 1..10) {
-        val resultado: Int = (numeroDigitado*i)
-        println("$numeroDigitado x $i = $resultado")
+//Desenvolva um programa usando a estrutura “para” que mostre na tela a
+//seguinte contagem:
+//0 5 10 15 20 25 30 35 40 Acabou!
+
+fun main() {
+    // Itera sobre um intervalo de 1 a 5 usando for
+    for (i in 0..40 step 5){
+        print("$i ")
     }
+    print("Acabou!")
 }

@@ -49,8 +49,6 @@ fun main(){
                 suaJogada = suaJogada.lowercase()
             }
 
-
-
             val delayMillis = 1000 // Define a quantidade de milissegundos de pausa entre os números
             for (i in 1..4) {
                 when (i) {
@@ -78,9 +76,7 @@ fun main(){
                 """.trimIndent()
             )
 
-            for (j in 1..2) {
-                Thread.sleep(delayMillis.toLong())
-            }
+            for (j in 1..2) { Thread.sleep(delayMillis.toLong()) }
 
             if (maquinaJogada == suaJogada) {
                 println("Você jogou: $suaJogada, Maquina jogou: ${maquinaJogada} ")
@@ -107,8 +103,7 @@ fun main(){
                 Thread.sleep(delayMillis.toLong())
             }
 
-            println(" ")
-            println("-----------------------")
+            println(" ");println("-----------------------")
 
             print("Deseja ver o placar? [s,n]")
             placarPontos = readln().lowercase()
@@ -121,16 +116,11 @@ fun main(){
         println(" ")
         print("Deseja jogar de novo JoKenPo: [s,n]")
         continuar = readln().lowercase()
-        if (continuar == "sim" || continuar == "s") {
-
-            println("===========================")
-            println(" ")
-            println(" ")
-            println(" ")
+        if (continuar == "sim" || continuar == "s")
+            println("===========================");println(" ");println(" ");println(" ")
         }else{
             continuar = "não"
         }
     }
-    println("-----------------------")
-    println("Obrigado por jogar")
+    println("-----------------------"); println("Obrigado por jogar")
 } //test
